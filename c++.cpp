@@ -1,19 +1,13 @@
-﻿#include<iostream>
-int n;
-bool prime(int a) {
-	if (a == 0) {
-		return false;
-	}
-	for (int i = 2; i < sqrt(a); i++) {
-		if (a % i == 0) {
-			return false;
-		}
-	}
-	return true;
-}
+#include<iostream>
+int a, b;
 int main()
 {
-	std::cin >> n;
-	std::cout << prime(n) << std::endl;
+	std::cin >> a >> b;
+	std::cout << a << '+' << b << '=' << a + b << std::endl;
+	std::cout << a << '-' << b << '=' << a - b << std::endl;
+	std::cout << a << '*' << b << '=' << a * b << std::endl;
+	std::cout << a << '/' << b << '=' << a / b << std::endl;
+	std::cout << a << '%' << b << '=' << a % b << std::endl;
 	return 0;
 }
+
